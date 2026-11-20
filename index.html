@@ -65,7 +65,7 @@ document.addEventListener("input",function(ev){
 </script>
 <title>Scheda d&#x27;azione CPET</title>
 <meta name="description" content="Leggere un test cardiopolmonare in ordine: i nove pannelli, i bivi, le soglie dal nucleo, le avvertenze.">
-<!-- cpet-consultazione {"documento": "scheda", "commit": "47c28814c03ea5a674023bd067cd4e0df7a809ba", "data": "2026-11-14", "nucleo": "fce5d7f14a0461a3517ff863b55688d18d96f2e75f51e60bcf73d4b7e265f196", "sorgente": "9e1e9a9787f0f7f05e2d25173a7bb23686ab1c96ea5689cfd5b74ef450b7a149", "numeri": 109} -->
+<!-- cpet-consultazione {"documento": "scheda", "commit": "33fe84eb1fcf385407917d263c73cef3425ccea4", "data": "2026-11-20", "nucleo": "580748138c516110f7fc2b3b15b5272f084d751f19d989dc8f6cba6d5b8843c6", "sorgente": "85ce6d7c7f890010a8e6b1fd30763220280227ec454fe3dc089262adbf057265", "numeri": 111} -->
 <style>
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 :root {
@@ -302,7 +302,7 @@ html.js.motore-ko #nomotore{display:block}
   con le soglie, e finisce in un bivio. Ogni numero viene dal nucleo dei numeri e porta il suo paragrafo, che apre il
   <a href="https://francescofugetto-ai.github.io/prontuario-cpet-web/">prontuario</a>. Le soglie valgono nella popolazione da cui vengono (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a>).</p>
   <div class="meta-row">
-    <span class="meta-chip">Nucleo al commit <strong>47c2881</strong> · 14/11/2026</span>
+    <span class="meta-chip">Nucleo al commit <strong>33fe84e</strong> · 20/11/2026</span>
     <span class="meta-chip"><strong>Adulto</strong>: il pediatrico è fuori perimetro</span>
     <span class="meta-chip">Pannelli: <strong>6ª ed.</strong> del Wasserman · <strong>trad.</strong> = tradizionale · <strong>ERS</strong> = Whipp</span>
   </div>
@@ -326,8 +326,8 @@ mostra, e i numeri sugli assi. La colonna di sinistra si legge in verticale per 
 <h2>Contesto e qualità <small>prima dei grafici</small></h2>
 <ul>
 <li>Il quesito, la storia, la spirometria, l'ECG, la coerenza dei dati, i sintomi e il motivo dell'arresto (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-2">§18.2</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-4">§18.4</a> D).</li>
-<li><strong>I dati seguono il carico?</strong> VE, VO₂ e RER devono salire con il carico; se non lo fanno: analizzatore,
-maschera che perde, agitazione, passo anomalo sul treadmill (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-4">§19.4</a>).</li>
+<li><strong>I dati seguono il carico?</strong> VE, VO₂ e RER devono seguire il carico; se non lo fanno, può essere un
+problema tecnico (analizzatore, maschera che perde), l'agitazione o un passo anomalo sul treadmill (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-4">§19.4</a>).</li>
 <li>Riposo stabile prima di partire: RER <b class="n" data-s="1">&lt; 1,0</b> e VO₂ circa <b class="n" data-s="1">3,5 mL·kg⁻¹·min⁻¹</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-1">§1</a>).</li>
 <li>Il valore di picco è la media degli ultimi <b class="n" data-s="19.4">30 secondi</b>; le oscillazioni si vedono meglio sulla media
 mobile respiro per respiro (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-4">§19.4</a>).</li>
@@ -340,9 +340,10 @@ chiama per ciò che mostra (<a class="rim" href="https://francescofugetto-ai.git
 <h2>Lo sforzo è stato massimale?</h2>
 <div class="guarda"><span class="pan"><span class="pan-t">RER</span><span class="pan-n" data-libero>6ª&nbsp;ed.&nbsp;8 · trad.&nbsp;8 · ERS&nbsp;8</span></span><span class="pan"><span class="pan-t">FC e polso dell'O₂</span><span class="pan-n" data-libero>6ª&nbsp;ed.&nbsp;2 · trad.&nbsp;2 · ERS&nbsp;3</span></span><span class="pan"><span class="pan-t">VO₂ e VCO₂ (e carico) nel tempo</span><span class="pan-n" data-libero>6ª&nbsp;ed.&nbsp;1 · trad.&nbsp;3 · ERS&nbsp;2</span></span></div>
 <ul>
-<li><strong>RER di picco</strong> <b class="n" data-s="1">&gt; 1,05</b> (ERS19, ISHLT24) — ma le soglie in uso nel nucleo sono cinque:
-almeno <b class="n" data-s="1">1,00</b> nelle griglie di Guazzi, <b class="n" data-s="1">≥ 1,05–1,10</b> (EJPC26), <b class="n" data-s="1">≥ 1,0, preferibilmente ≥ 1,1</b>
-nella HFpEF. <strong>Si dichiara quale</strong> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-1">§1</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-17">§17</a> r. 16).</li>
+<li><strong>RER di picco</strong> <b class="n" data-s="1">&gt; 1,05</b> (ERS19, ISHLT24) — ma le soglie in uso nel nucleo sono almeno
+cinque: almeno <b class="n" data-s="1">1,00</b> nelle griglie di Guazzi, dove il VO₂ di picco vale anche se il test è stato fermato per una
+risposta emodinamica o ECG anormale; <b class="n" data-s="1">≥ 1,05–1,10</b> (EJPC26); <b class="n" data-s="1">≥ 1,0, preferibilmente ≥ 1,1</b> nella
+HFpEF; <b class="n" data-s="1">≥ 1,10</b> come criterio di uno studio (EDVARD13). <strong>Si dichiara quale</strong> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-1">§1</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-17">§17</a> r. 16).</li>
 <li>Gli altri criteri ERS si contano insieme: plateau del VO₂ <b class="n" data-s="1">&lt; 2,1 mL·kg⁻¹·min⁻¹</b>, FC di picco
 <b class="n" data-s="1">&gt; 100 % del predetto</b>, VO₂ di picco <b class="n" data-s="1">≥ 100 % del predetto</b>, VE/MVV <b class="n" data-s="1">≥ 85 %</b>, lattato
 <b class="n" data-s="1">≥ 8 mmol/L</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-1">§1</a>).</li>
@@ -369,8 +370,8 @@ treadmill (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario
 <b class="n" data-s="4.2-bis">limite di confidenza al 95 %</b> (Wasserman) (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-4-2-bis">§4.2-bis</a>).</li>
 <li>Treadmill e ciclo non si convertono a occhio: <b class="n" data-s="3.5">+ 22 %</b> (KAMIN22) o <b class="n" data-s="3.5">≈ 10 %</b> (EJPC26), e i
 due numeri non si mediano (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-3-5">§3.5</a>).</li>
-<li>Dove si colloca: percentili dei sani (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-4-1">§4.1</a>) e dei cardiopatici (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-4-2">§4.2</a>), statunitensi; <strong>per l'Italia nessun dato
-normativo</strong> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a> r. 7).</li>
+<li>Dove si colloca: percentili dei sani (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-4-1">§4.1</a>) e dei cardiopatici (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-4-2">§4.2</a>), statunitensi; <strong>per l'Italia non è stato trovato
+nessun dato normativo</strong> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a> r. 7).</li>
 </ul>
 <div class="bivio"><strong>Bivio</strong> Normale → normale, obesità (VO₂/kg ridotto), malattia cardiopolmonare iniziale,
 iperventilazione e ansia (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-2">§18.2</a>). Ridotto → la soglia.</div>
@@ -381,10 +382,12 @@ iperventilazione e ansia (<a class="rim" href="https://francescofugetto-ai.githu
 <div class="guarda"><span class="pan"><span class="pan-t">FC e VCO₂ contro VO₂ (V-slope)</span><span class="pan-n" data-libero>6ª&nbsp;ed.&nbsp;3 · trad.&nbsp;5 · ERS&nbsp;1</span></span><span class="pan"><span class="pan-t">VE/VO₂ e VE/VCO₂</span><span class="pan-n" data-libero>6ª&nbsp;ed.&nbsp;4 · trad.&nbsp;6 · ERS&nbsp;4</span></span><span class="pan"><span class="pan-t">PETO₂ e PETCO₂</span><span class="pan-n" data-libero>6ª&nbsp;ed.&nbsp;7 · trad.&nbsp;9 · ERS&nbsp;7</span></span></div>
 <ul>
 <li><strong>Prima il V-slope</strong>; poi la conferma: il VE/VO₂ sale con il VE/VCO₂ <strong>stabile</strong>, e il PETO₂
-sale. Se gli equivalenti salgono insieme è un'iperventilazione, non la soglia (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-6">§6</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>).</li>
+sale. Se gli equivalenti salgono insieme <strong>fanno pensare</strong> a un'iperventilazione, ma non la provano: salgono
+insieme anche quando la soglia è superata subito dopo l'avvio, e allora lo dicono il V-slope e le pressioni di fine
+espirazione (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-6">§6</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>).</li>
 <li>Non si trova se il primo carico è già sopra la soglia (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>).</li>
-<li>Nei sani <b class="n" data-s="6">≈ 45–65 % del VO₂ di picco</b> (EJPC26); <b class="n" data-s="6">superiore al 40 %</b> del massimo misurato
-(HANSEN84); <b class="n" data-s="18.1">&gt; 40 % del VO₂max predetto</b> (2003); precoce se <b class="n" data-s="6">&lt; 40 % del predetto</b>
+<li>Nei sani <b class="n" data-s="6">≈ 45–65 % del VO₂ di picco</b> (EJPC26); <b class="n" data-s="6">superiore al 40 %</b> del massimo misurato nel
+campione di Hansen, che non è un campione di sani (HANSEN84); <b class="n" data-s="18.1">&gt; 40 % del VO₂max predetto</b> (2003); precoce se <b class="n" data-s="6">&lt; 40 % del predetto</b>
 (HFPEF22). <strong>Si dichiara il denominatore</strong>, misurato o predetto (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-6">§6</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-17">§17</a> r. 24).</li>
 </ul>
 <div class="bivio"><strong>Bivio</strong> Tre rami (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-2">§18.2</a>). Soglia normale → malattia polmonare, scarso impegno, ischemia
@@ -402,11 +405,12 @@ miopatia mitocondriale — e la soglia da sola non li separa (<a class="rim" hre
 e se la MVV è <strong>misurata o stimata</strong> dal FEV₁ (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-8">§8</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-17">§17</a> r. 23).</li>
 <li>Una riserva conservata <strong>non esclude</strong> un limite polmonare; nell'atleta una riserva bassa può essere
 fisiologica (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-4">§18.4</a> G).</li>
-<li>Iperinflazione: calo della IC <b class="n" data-s="8">&gt; 150 mL</b>, oppure <b class="n" data-s="8">&gt; 140 mL</b> per HFPEF22; si dimostra solo
-misurando la IC durante lo sforzo (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-8">§8</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>).</li>
+<li>Iperinflazione: calo della IC <b class="n" data-s="8">&gt; 150 mL</b>, oppure <b class="n" data-s="8">&gt; 140 mL</b> per HFPEF22; si dimostra
+rimisurando la IC durante lo sforzo (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-8">§8</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>).</li>
 <li>Frequenza respiratoria <b class="n" data-s="8">&gt; 40 al picco</b>, con riserva bassa e soglia normale → restrittivo (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-8">§8</a>).</li>
 <li><strong>Riserva di FC</strong>: si dichiara l'espressione della FC massima, che nel nucleo sono dieci (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-5-1">§5.1</a>). Riserva
-cronotropa <b class="n" data-s="5.2">≥ 80 % del predetto</b>; relazione metabolico-cronotropa normale <b class="n" data-s="5.2">&gt; 0,8</b>,
+cronotropa <b class="n" data-s="5.2">≥ 80 % del predetto</b> — è la quota di riserva <strong>usata</strong> (lettura nostra della sigla di
+EJPC26), mentre nell'albero del 2003 «HRR» è la riserva <strong>residua</strong>; relazione metabolico-cronotropa normale <b class="n" data-s="5.2">&gt; 0,8</b>,
 incompetenza <b class="n" data-s="5.2">&lt; 0,80</b> — nella HFpEF <b class="n" data-s="5.2">≤ 0,80</b>, oppure <b class="n" data-s="5.2">&lt; 0,62 in terapia
 betabloccante</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-5-2">§5.2</a>). L'indice di Lauer si calcola con <b class="n" data-s="5.3">220 − età</b> al denominatore (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-5-3">§5.3</a>).</li>
 <li><strong>SpO₂</strong>: a riposo <b class="n" data-s="7.3">≥ 95 %</b>, in sforzo <b class="n" data-s="7.3">&gt; 92 %</b>, cala <b class="n" data-s="7.3">meno di 5
@@ -454,7 +458,8 @@ dichiara (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-
 </ul>
 <div class="bivio"><strong>Bivio</strong> Scompenso o vasculopatia polmonare: la PETCO₂ <strong>sale</strong> dal pedalare a
 vuoto alla soglia nello scompenso e <strong>scende</strong> nella vasculopatia; EOV nello scompenso, assente nei
-<b class="n" data-s="18.5">gruppi 1 e 4</b>; P(A−a)O₂ normale contro alta; SpO₂ di solito stabile contro in calo (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-5">§18.5</a>). Iperventilazione o
+<b class="n" data-s="18.5">gruppi 1 e 4</b>; P(A−a)O₂ normale contro alta; SpO₂ di solito stabile contro in calo (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-5">§18.5</a>). Ma nella cardiopatia sinistra o nella BPCO
+il pattern da vasculopatia può essere <strong>una limitazione vascolare in più</strong>, non un'alternativa (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-5">§18.5</a>). Iperventilazione o
 vasculopatia: separano la PaCO₂ con la P(a−ET)CO₂, la SpO₂, il VO₂ di picco, il respiro erratico (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-5">§18.5</a>).</div>
 </section>
 
@@ -466,20 +471,21 @@ vasculopatia: separano la PaCO₂ con la P(a−ET)CO₂, la SpO₂, il VO₂ di 
 massimo, verde; plateau precoce e persistente, giallo; plateau precoce poi calo, rosso: ischemia <strong>in pazienti
 selezionati</strong> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-4">§18.4</a> D). Un criterio suggerito c'è, <b class="n" data-s="18.1">&gt; 80 %</b> del predetto (2003); un cut-off
 validato no (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a> r. 6).</li>
-<li><strong>ΔVO₂/ΔWR</strong> <b class="n" data-s="9">≈ 10–11 mL·min⁻¹·W⁻¹ fino a VT1</b>, anormale <b class="n" data-s="9">&lt; 8,5</b>; si scrive solo
-su un ciclo ben calibrato, con qualche minuto sopra <b class="n" data-s="9">15 W</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>). Bassa con VE/VCO₂ alto → limite vascolare
+<li><strong>ΔVO₂/ΔWR</strong> <b class="n" data-s="9">≈ 10–11 mL·min⁻¹·W⁻¹ fino a VT1</b>, anormale <b class="n" data-s="9">&lt; 8,5</b>; si riporta di
+regola solo su un ciclo ben calibrato, con almeno qualche minuto sopra <b class="n" data-s="9">15 W</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>). Bassa con VE/VCO₂ alto → limite vascolare
 polmonare o cardiaco; con VE/VCO₂ normale → periferico (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>).</li>
 <li>Una flessione di ΔVO₂/ΔWR dopo VT1: ischemia, valvulopatia significativa, ostruzione dinamica nella cardiomiopatia
 ipertrofica, shunt — <strong>non specifica di malattia</strong> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-4">§18.4</a> D).</li>
 <li><strong>Pressione</strong>: la sistolica sale <b class="n" data-s="9">≈ 8–12 mmHg per MET</b> (<b class="n" data-s="9">≈ 5–6</b> negli atleti), con un
-picco <b class="n" data-s="9">&lt; 210 mmHg</b> negli uomini e <b class="n" data-s="9">&lt; 190 mmHg</b> nelle donne (EJPC26); risposta ipertensiva
+picco, nei non atleti, <b class="n" data-s="9">&lt; 210 mmHg</b> negli uomini e <b class="n" data-s="9">&lt; 190 mmHg</b> nelle donne (EJPC26); risposta ipertensiva
 <b class="n" data-s="9">≥ 20 mmHg ogni 3,5 mL O₂·kg⁻¹·min⁻¹</b> o diastolica che sale (Guazzi 2016); attenzione alla pressione che non
 sale o scende (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-4">§18.4</a> B, D).</li>
 <li><strong>Recupero della FC al primo minuto</strong>, attivo: <b class="n" data-s="5.4">≤ 12 bpm</b> anormale (Cole); per decisione di
 progetto <b class="n" data-s="5.4">12 battiti esatti sono anormali</b>, mentre EJPC26 e HFPEF22 li dicono normali. Passivo: normale
-<b class="n" data-s="5.4">≥ 18 bpm</b>. A due minuti: normale <b class="n" data-s="5.4">≥ 22 bpm</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-5-4">§5.4</a>).</li>
-<li>Nel recupero, il <strong>RER overshoot</strong> è normale <b class="n" data-s="9">≥ 30 %</b> e l'assenza è anormale; un RER che
-<strong>scende</strong> all'inizio del recupero dice un apporto o un utilizzo dell'O₂ gravemente compromessi (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>).</li>
+<b class="n" data-s="5.4">≥ 18 bpm</b>. A due minuti, <strong>nei test submassimali</strong>: normale <b class="n" data-s="5.4">≥ 22 bpm</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-5-4">§5.4</a>).</li>
+<li>Nel recupero, il <strong>RER overshoot</strong> è normale <b class="n" data-s="9">≥ 30 %</b> e l'assenza è anormale; con apporto o
+utilizzo dell'O₂ molto limitati il RER <strong>può invece scendere</strong> all'inizio del recupero, perché il VO₂ recupera
+tardi (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-19-3">§19.3</a>).</li>
 </ul>
 <div class="trappola"><strong>Trappola</strong> Le traiettorie vogliono il tracciato intero e un cicloergometro a freno
 elettromagnetico (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-9">§9</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-18-4">§18.4</a> D).</div>
@@ -508,11 +514,12 @@ ipotesi</strong>, con i reperti a favore e contro, non una diagnosi (<a class="r
 calcolatore ufficiale (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-16">§16</a> r. 1)</td><td>§10.2</td></tr>
 <tr><td>Referral al trapianto — ISHLT 2024</td><td>VO₂ di picco <b class="n" data-s="11.1">≤ 12 mL·kg⁻¹·min⁻¹</b> in betabloccante ·
 <b class="n" data-s="11.1">≤ 14 mL·kg⁻¹·min⁻¹</b> senza · <b class="n" data-s="11.1">≤ 19 mL·kg⁻¹·min⁻¹</b> sulla massa magra se BMI <b class="n" data-s="11.1">≥ 30</b>
-· VE/VCO₂ <b class="n" data-s="11.1">&gt; 35</b> · <b class="n" data-s="11.1">≤ 50 % del predetto</b> nelle donne oppure a <b class="n" data-s="11.1">≤ 50 o ≥ 70 anni</b>.
-Solo con CPET massimale (RER <b class="n" data-s="11.1">&gt; 1,05</b> e soglia raggiunta), mai criterio unico; dal 2026 la soglia è
-discussa (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a> r. 8)</td><td>§11.1</td></tr>
-<tr><td>Scompenso avanzato e LVAD — ESC 2026</td><td>VO₂ di picco <b class="n" data-s="11.1">&lt; 12–14 mL·kg⁻¹·min⁻¹</b> oppure
-<b class="n" data-s="11.1">&lt; 50 % del predetto</b>; la tabella del trapianto non ha cut-off CPET</td><td>§11.1</td></tr>
+· VE/VCO₂ <b class="n" data-s="11.1">&gt; 35</b> per tutti, <strong>specie se il CPET è submassimale</strong> · <b class="n" data-s="11.1">≤ 50 % del
+predetto</b> nelle donne oppure a <b class="n" data-s="11.1">≤ 50 o ≥ 70 anni</b>. CPET massimale vuol dire RER <b class="n" data-s="11.1">&gt; 1,05</b> e
+soglia raggiunta; mai criterio unico; dal 2026 la soglia è discussa (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a> r. 8)</td><td>§11.1</td></tr>
+<tr><td>Scompenso avanzato e LVAD — ESC 2026</td><td>VO₂ di picco <b class="n" data-s="11.1">&lt; 12–14 mL·kg⁻¹·min⁻¹</b> (il
+<b class="n" data-s="11.1">12 mL/kg/min</b> per chi è in betabloccante) oppure <b class="n" data-s="11.1">&lt; 50 % del predetto</b>; la tabella del
+trapianto non ha cut-off CPET</td><td>§11.1</td></tr>
 <tr><td>HFpEF — diagnosi</td><td>VO₂ di picco <b class="n" data-s="11.6">&lt; 14 mL·kg⁻¹·min⁻¹</b> molto probabile ·
 <b class="n" data-s="11.6">&gt; 20</b> molto improbabile · <b class="n" data-s="11.6">14–20</b> servono l'eco o il cateterismo da sforzo</td><td>§11.6</td></tr>
 <tr><td>Ipertensione arteriosa polmonare — ESC/ERS 2022, tre strati</td><td>VO₂ <b class="n" data-s="11.2">&gt; 15 mL·min⁻¹·kg⁻¹</b>
@@ -530,7 +537,7 @@ servizio preoperatorio è una decisione ancora aperta</td><td>§11.4</td></tr>
 <h2>Che cosa il referto dichiara sempre</h2>
 <ol>
 <li>L'<strong>equazione</strong> del predetto e la <strong>definizione di normale</strong>: non esistono valori di riferimento
-condivisi, e per l'Italia non c'è un dato normativo (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-3">§3</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-4-2-bis">§4.2-bis</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a> r. 1 e 7).</li>
+condivisi, e per l'Italia non è stato trovato un dato normativo (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-3">§3</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-4-2-bis">§4.2-bis</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-15">§15</a> r. 1 e 7).</li>
 <li>L'<strong>espressione della FC massima</strong>, e che l'indice cronotropo usa <b class="n" data-s="5.3">220 − età</b> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-5-1">§5.1</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-5-3">§5.3</a>).</li>
 <li>Quale <strong>soglia del RER</strong>, e su quale <strong>denominatore</strong> è misurata la soglia (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-1">§1</a>, <a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-6">§6</a>).</li>
 <li>Su quale tratto è calcolata la <strong>pendenza VE/VCO₂</strong> (<a class="rim" href="https://francescofugetto-ai.github.io/prontuario-cpet-web/#s-7-1">§7.1</a>).</li>
@@ -544,7 +551,7 @@ anormali</b>; un calo della SpO₂ di <b class="n" data-s="7.3">5 punti esatti</
 </ol>
 </section>
 
-<footer class="piede"><p><strong>Da dove viene.</strong> Generato da <code>04_consultazione/genera.py</code> dal nucleo dei numeri <code>01_numeri/NUMERI-CPET.md</code> al commit <code>47c2881</code> del 14/11/2026 (impronta <code>fce5d7f14a04</code>), nel repository privato del progetto CPET. <strong>Non si corregge qui</strong>: si corregge il nucleo, poi si rigenera. La sorgente scritta a mano è <code>04_consultazione/scheda_sorgente.html</code>: ogni numero porta il paragrafo del nucleo da cui viene, e lo script ha controllato che vi stia scritto (109 numeri).</p><p>Francesco Fugetto · Cardiologo pediatra · Università di Verona. Documento di consultazione: non sostituisce il giudizio clinico, e la decisione resta guideline-directed.</p></footer>
+<footer class="piede"><p><strong>Da dove viene.</strong> Generato da <code>04_consultazione/genera.py</code> dal nucleo dei numeri <code>01_numeri/NUMERI-CPET.md</code> al commit <code>33fe84e</code> del 20/11/2026 (impronta <code>580748138c51</code>), nel repository privato del progetto CPET. <strong>Non si corregge qui</strong>: si corregge il nucleo, poi si rigenera. La sorgente scritta a mano è <code>04_consultazione/scheda_sorgente.html</code>: ogni numero porta il paragrafo del nucleo da cui viene, e lo script ha controllato che vi stia scritto (111 numeri).</p><p>Francesco Fugetto · Cardiologo pediatra · Università di Verona. Documento di consultazione: non sostituisce il giudizio clinico, e la decisione resta guideline-directed.</p></footer>
 </div>
 </div>
 
